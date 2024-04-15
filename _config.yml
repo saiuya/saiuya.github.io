@@ -3,13 +3,13 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: '細雨Blog'
-subtitle: '分享技术, 分享生活'
+title: 細雨Blog
+subtitle: 分享技术, 分享生活
 description: ''
-keywords: 'saiu', '細雨', 'AR', '增强现实', '拡張現実' 'vision pro'
-author: '細雨'
-language: 'zh-CN'
-timezone: 'Japan'
+keywords: saiu,細雨,AR,增强现实,拡張現実,VisionPro
+author: 細雨
+language: zh-CN
+timezone: Japan
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
