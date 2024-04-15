@@ -650,7 +650,7 @@ footer_bg: transparent
 # Add mask to header or footer (为 header 或 footer 添加黑色半透遮罩)
 mask:
   header: false
-  footer: false
+  footer: true
 
 # the position of bottom right button/default unit: px (右下角按鈕距離底部的距離/默認單位為px)
 rightside_bottom:
@@ -718,7 +718,7 @@ clickShowText:
 
 # Default display mode (網站默認的顯示模式)
 # light (default) / dark
-display_mode: light
+display_mode: dark
 
 # Beautify (美化頁面顯示)
 beautify:
