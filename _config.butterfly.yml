@@ -642,7 +642,7 @@ text_align_justify: false
 # Website Background (設置網站背景)
 # can set it to color or image (可設置圖片 或者 顔色)
 # The formal of image: url(http://xxxxxx.com/xxx.jpg)
-background: '#49B202'
+background: url(https://vc.static.pil0txia.com/gallery/tenki_no_ko/WEATHERING%20WITH%20YOU_002535.454.webp)
 
 # Footer Background
 footer_bg: transparent
