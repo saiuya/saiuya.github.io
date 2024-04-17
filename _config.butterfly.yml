@@ -632,7 +632,7 @@ site_verification:
 # The position of site info, eg: 300px/300em/300rem/10% (主頁標題距離頂部距離)
 index_site_info_top:
 # The height of top_img, eg: 300px/300em/300rem (主頁top_img高度)
-index_top_img_height: 400px
+index_top_img_height: 300px
 
 # The user interface setting of category and tag page (category和tag頁的UI設置)
 # index - same as Homepage UI (index 值代表 UI將與首頁的UI一樣)
@@ -667,7 +667,7 @@ enter_transitions: true
 activate_power_mode:
   enable: true
   colorful: true # open particle animation (冒光特效)
-  shake: true #  open shake (抖動特效)
+  shake: false #  open shake (抖動特效)
   mobile: true
 
 # Background effects (背景特效)
@@ -776,7 +776,9 @@ subtitle:
   source: 3
   # 如果關閉打字效果，subtitle 只會顯示 sub 的第一行文字
   sub: 
+    - 双手合十的愿望里永远有你
     - 青青子衿，悠悠我心
+    - 穿越人海，只为与你相拥
 
 # Loading Animation (加載動畫)
 preloader:
