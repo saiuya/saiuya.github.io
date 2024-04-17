@@ -816,8 +816,8 @@ fancybox: true
 # series (系列文章)
 series:
   enable: true
-  orderBy: 'title' # Order by title or date
-  order: 1 # Sort of order. 1, asc for ascending; -1, desc for descending
+  orderBy: 'date' # Order by title or date
+  order: -1 # Sort of order. 1, asc for ascending; -1, desc for descending
   number: true
 
 # abcjs (樂譜渲染)
