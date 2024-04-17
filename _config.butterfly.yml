@@ -380,7 +380,7 @@ local_search:
     input_placeholder: Search for Posts
     hits_empty: "目前没有找到任何搜索结果: ${query}"
     hits_stats: "找到${hits}条结果（用时${time} ms）"
-    
+
 # Docsearch
 docsearch:
   enable: false
@@ -679,8 +679,8 @@ activate_power_mode:
 # See: https://github.com/hustcc/ribbon.js
 canvas_ribbon:
   enable: true
-  size: 150
-  alpha: 0.3
+  size: 100
+  alpha: 0.1
   zIndex: -1
   click_to_change: true
   mobile: true
@@ -694,8 +694,8 @@ canvas_fluttering_ribbon:
 # https://github.com/hustcc/canvas-nest.js
 canvas_nest:
   enable: true
-  color: '0,0,255' #color of lines, default: '0,0,0'; RGB values: (R,G,B).(note: use ',' to separate.)
-  opacity: 0.3 # the opacity of line (0~1), default: 0.5.
+  color: '0,255,0' #color of lines, default: '0,0,0'; RGB values: (R,G,B).(note: use ',' to separate.)
+  opacity: 0.1 # the opacity of line (0~1), default: 0.5.
   zIndex: -1 # z-index property of the background, default: -1.
   count: 99 # the number of lines, default: 99.
   mobile: false
