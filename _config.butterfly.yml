@@ -759,10 +759,6 @@ subtitle:
   # Customize typed.js (配置typed.js)
   # https://github.com/mattboldt/typed.js/#customization
   typed_option:
-    typeSpeed: 2
-    backSpeed: 1
-    backDelay: 1000
-    startDelay: 500
     loop: true
     loopCount: Infinity
     showCursor: true
