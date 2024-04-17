@@ -764,7 +764,7 @@ subtitle:
     backDelay: 1000
     startDelay: 500
     loop: true
-    loopCount: Infinity,
+    loopCount: Infinity
     showCursor: true
     cursorChar: '/'
   # source 調用第三方服務
