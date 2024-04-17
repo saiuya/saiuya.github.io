@@ -761,8 +761,12 @@ subtitle:
   typed_option:
     loop: true
     loopCount: Infinity
+    typeSpeed: 300
+    backSpeed: 500
+    backDelay: 700
     showCursor: true
     cursorChar: '/'
+    autoInsertCss: true
   # source 調用第三方服務
   # source: false 關閉調用
   # source: 1  調用一言網的一句話（簡體） https://hitokoto.cn/
