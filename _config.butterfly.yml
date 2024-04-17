@@ -163,7 +163,7 @@ post_copyright:
 # Sponsor/reward
 reward:
   enable: true
-  text: 有钱的来!
+  text: wechat support
   QR_code:
     - img: /img/support.jpg
       link:
