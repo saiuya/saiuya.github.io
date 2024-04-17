@@ -45,7 +45,7 @@ favicon: /img/avatar.png
 # Avatar (頭像)
 avatar:
   img: https://saiuya.com/img/avatar.png
-  effect: true
+  effect: false
 
 # Disable all banner image
 disable_top_img: false
