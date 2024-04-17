@@ -45,7 +45,7 @@ favicon: /img/avatar.png
 # Avatar (頭像)
 avatar:
   img: https://saiuya.com/img/avatar.png
-  effect: true
+  effect: false
 
 # Disable all banner image
 disable_top_img: false
@@ -672,22 +672,22 @@ activate_power_mode:
 # canvas_ribbon (靜止彩帶背景)
 # See: https://github.com/hustcc/ribbon.js
 canvas_ribbon:
-  enable: false
+  enable: true
   size: 150
   alpha: 0.6
   zIndex: -1
-  click_to_change: false
-  mobile: false
+  click_to_change: true
+  mobile: true
 
 # Fluttering Ribbon (動態彩帶)
 canvas_fluttering_ribbon:
-  enable: false
-  mobile: false
+  enable: true
+  mobile: true
 
 # canvas_nest
 # https://github.com/hustcc/canvas-nest.js
 canvas_nest:
-  enable: false
+  enable: true
   color: '0,0,255' #color of lines, default: '0,0,0'; RGB values: (R,G,B).(note: use ',' to separate.)
   opacity: 0.7 # the opacity of line (0~1), default: 0.5.
   zIndex: -1 # z-index property of the background, default: -1.
@@ -915,6 +915,7 @@ inject:
     - <link rel="stylesheet" href="/css/modify.css">
   bottom:
     # - <script src="xxxx"></script>
+    - <script src="https://fastly.jsdelivr.net/gh/sviptzk/HexoStaticFile@latest/Hexo/js/mouse_snow.min.js"></script>
 
 # CDN
 # Don't modify the following settings unless you know how they work
