@@ -234,7 +234,7 @@ aside:
       link: https://github.com/saiuya
   card_announcement:
     enable: true
-    content: <p align="center">WeChat ID：miaoxiaodeziji_</p>
+    content: 欢迎回来!
   card_recent_post:
     enable: true
     limit: 5 # if set 0 will show all
