@@ -269,6 +269,8 @@ aside:
     series_title: false # The title shows the series name
     orderBy: 'date' # Order by title or date
     order: -1 # Sort of order. 1, asc for ascending; -1, desc for descending
+  card_hitokoto:
+    enable: true
 
 # busuanzi count for PV / UV in site
 # 訪問人數
@@ -280,12 +282,12 @@ busuanzi:
 # Time difference between publish date and now (網頁運行時間)
 # Formal: Month/Day/Year Time or Year/Month/Day Time
 runtimeshow:
-  enable: false
-  publish_date:
+  enable: true
+  publish_date: 2024/04/14 14:04:00
 
 # Aside widget - Newest Comments
 newest_comments:
-  enable: false
+  enable: true
   sort_order: # Don't modify the setting unless you know how it works
   limit: 6
   storage: 10 # unit: mins, save data to localStorage
@@ -674,7 +676,7 @@ activate_power_mode:
 canvas_ribbon:
   enable: true
   size: 150
-  alpha: 0.4
+  alpha: 0.3
   zIndex: -1
   click_to_change: true
   mobile: true
@@ -689,7 +691,7 @@ canvas_fluttering_ribbon:
 canvas_nest:
   enable: true
   color: '0,0,255' #color of lines, default: '0,0,0'; RGB values: (R,G,B).(note: use ',' to separate.)
-  opacity: 0.7 # the opacity of line (0~1), default: 0.5.
+  opacity: 0.3 # the opacity of line (0~1), default: 0.5.
   zIndex: -1 # z-index property of the background, default: -1.
   count: 99 # the number of lines, default: 99.
   mobile: false
