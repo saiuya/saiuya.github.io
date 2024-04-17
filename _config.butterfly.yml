@@ -9,15 +9,15 @@ nav:
 
 # Menu 目錄
 menu:
-  家: / || fas fa-home
-  時間軸: /archives/ || fas fa-archive
-  タグ: /tags/ || fas fa-tags
-  分類: /categories/ || fas fa-folder-open
-  リスト||fas fa-list:
-    Music: /music/ || fas fa-music
-    Movie: /movies/ || fas fa-video
-  リンク: /link/ || fas fa-link
-  自分紹介: /about/ || fas fa-heart
+  # 家: / || fas fa-home
+  # 時間軸: /archives/ || fas fa-archive
+  # タグ: /tags/ || fas fa-tags
+  # 分類: /categories/ || fas fa-folder-open
+  # リスト||fas fa-list:
+  #   Music: /music/ || fas fa-music
+  #   Movie: /movies/ || fas fa-video
+  # リンク: /link/ || fas fa-link
+  # 自分紹介: /about/ || fas fa-heart
 
 # Code Blocks (代碼相關)
 # --------------------------------------
@@ -679,8 +679,8 @@ activate_power_mode:
 # See: https://github.com/hustcc/ribbon.js
 canvas_ribbon:
   enable: true
-  size: 150
-  alpha: 0.5
+  size: 100
+  alpha: 0.1
   zIndex: -1
   click_to_change: true
   mobile: true
@@ -694,8 +694,8 @@ canvas_fluttering_ribbon:
 # https://github.com/hustcc/canvas-nest.js
 canvas_nest:
   enable: true
-  color: '0,255,0' #color of lines, default: '0,0,0'; RGB values: (R,G,B).(note: use ',' to separate.)
-  opacity: 0.5 # the opacity of line (0~1), default: 0.5.
+  color: '0,0,255' #color of lines, default: '0,0,0'; RGB values: (R,G,B).(note: use ',' to separate.)
+  opacity: 0.1 # the opacity of line (0~1), default: 0.5.
   zIndex: -1 # z-index property of the background, default: -1.
   count: 99 # the number of lines, default: 99.
   mobile: false
