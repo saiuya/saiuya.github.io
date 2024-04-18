@@ -4,12 +4,6 @@
     src: url('../font/IntelOneMono-Light.otf') format("truetype");
 }
 
-@font-face {
-    font-family: 'Wawati-SC';
-    font-display: swap;
-    src: url('../font/Wawati-SC.otf') format("truetype");
-}
-
 body {
-    font-family: 'IntelOneMono-Light', 'Wawati-SC';
+    font-family: 'IntelOneMono-Light';
 }
