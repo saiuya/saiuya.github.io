@@ -395,7 +395,7 @@ docsearch:
 # https://github.com/overtrue/share.js
 sharejs:
   enable: true
-  sites: wechat,qq
+  sites: wechat
 
 # AddToAny
 # https://www.addtoany.com/
@@ -930,7 +930,9 @@ inject:
     # - <link rel="stylesheet" href="/xxx.css">
     - <link rel="stylesheet" href="/css/modify.css">
     ## 星空背景
-    - <link rel="stylesheet" href="/css/universe.css">    
+    - <link rel="stylesheet" href="/css/universe.css">
+    ## font setting
+    - <link rel="stylesheet" href="/css/font.css">
   bottom:
     # - <script src="xxxx"></script>
     - <script src="https://fastly.jsdelivr.net/gh/sviptzk/HexoStaticFile@latest/Hexo/js/mouse_snow.min.js"></script>
