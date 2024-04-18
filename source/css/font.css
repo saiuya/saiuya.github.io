@@ -1,13 +1,9 @@
-@font-face{
-    font-family: 'IntelOneMono-Regular';
-    font-display: swap;
-    src: url('../font/IntelOneMono-Regular.ttf') format("truetype");
-}
-@font-face{
+@font-face {
     font-family: 'Wawati SC';
     font-display: swap;
     src: url('../font/Wawati-SC.ttf') format("truetype");
 }
+
 body {
-    font-family: 'IntelOneMono-Regular','Wawati-SC';
+    font-family: 'Wawati-SC';
 }
