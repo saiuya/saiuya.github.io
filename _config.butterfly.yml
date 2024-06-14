@@ -348,7 +348,6 @@ rightside_item_order:
 mathjax:
   enable: true    # Pandoc
   per_page: true
-  tags: ams       #Pandoc
 
 # KaTeX
 katex:
