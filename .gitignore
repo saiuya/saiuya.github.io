@@ -1,8 +1,8 @@
 .DS_Store
 Thumbs.db
 *.log
-public/
 db.json
+public/
 node_modules/
 .deploy*/
 _multiconfig.yml
