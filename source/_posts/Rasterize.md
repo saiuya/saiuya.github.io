@@ -2,10 +2,7 @@
 title: Rasterize
 date: 2024-06-14 20:28:28
 categories: 
-- ゼミ
 tags:
-- Unity
-- 研究
 ---
 
 ## viewport变换:
@@ -14,18 +11,18 @@ tags:
 - 下図に示す:
 <p align="center"> <img src="./img/投影变换.png"  style="zoom: 33%;" /></p>
 
----
+***
 ## screenと言うのは何か？
 - screen空間は一連の画素を組み込みしたものです。
 <p align="center"> <img src="./img/屏幕空间.png"  style="zoom: 33%;" /></p>
 - 上図のように, pixelは発光する小さな四角形として簡単に定義できます。
 
----
+***
 - screen空間のサイズは（0、0）から（Width, Height）までと定義します。変換行列を次のように構築します:
 <p align="center"> <img src="./img/视口变换矩阵.png"  style="zoom: 22%;" /></p>
 - この変換行列を使用して、(-1, 1)の3乗に位置を定義した正規空間を(Width, Height)のscreenスペースに変換します。
 
----
+***
 ## Rasteriz:
 - 一般的に、rasterizeとは、screenスペースのobjectを組み込みしたpolygon（通常は三角形）をpixelに変換し、2D画像を描くことを指します。
 - 下図に示す:
@@ -38,7 +35,7 @@ tags:
 - 下図に示す：
 <p align="center"> <img src="./img/三角形.png"  style="zoom: 22%;" /></p>
 
----
+***
 ## Rasteriz Method：
 ### 1. pixelの中心点と三角形の位置関係を判断する: 外積できます.
   - 内外画素を判断する:
@@ -56,7 +53,7 @@ tags:
     - E01(P) > 0 && E12(P) > 0 && E20(P) > 0
   - だったら, 点Pは三角形の中にいます.
 
----
+***
 - 画面の空間には多数のpixelがありますが、1つの図形要素（三角形）が占めるpixel数は少ないため、各三角形ごとに画面のすべてのpixelを判断する必要はありません。
 - テストしたい三角形を囲む境界ボックス（bounding box）を使用し、その境界ボックス内の点のみをサンプリングテストすることができます。
 - 下図に示す：
@@ -79,7 +76,7 @@ tags:
     \lambda _{bcp} = \frac{S\Delta BCP}{S\Delta ABC} = \frac{\frac{\overrightarrow{BC}\times \overrightarrow{BP}}{2}}{\frac{\overrightarrow{AB}\times \overrightarrow{AC}}{2}} = \frac{\overrightarrow{BC}\times \overrightarrow{BP}}{\overrightarrow{AB}\times \overrightarrow{AC}}
     $$
 
----
+***
 - 線形補間により、点Dの座標を得ることができます:
     $$
     D=(1 - t)B+tC　（t は0から1の間のパラメータです。）
@@ -101,7 +98,7 @@ tags:
     \overrightarrow{OD}=(1 - t)\overrightarrow{OB}+t\overrightarrow{OC} = \frac{\lambda _{acp}}{\lambda _{abp} + \lambda _{acp}}\overrightarrow{OB} + \frac{\lambda _{abp}}{\lambda _{abp} + \lambda _{acp}}\overrightarrow{OC}
     $$
 
----
+***
 - 而も既知:
     $$
     \frac{AP}{PD} = \frac{AP\cdot \frac{h_{1}}{2} + AP\cdot \frac{h2}{2}}{PD\cdot \frac{h1}{2} + PD\cdot  \frac{h2}{2}} = \frac{S\Delta ABP + S\Delta ACP}{S\Delta PBD + S\Delta PCD} = \frac{\lambda _{abp} +\lambda _{acp}}{\lambda _{bcp}} = \frac{t}{1-t}
