@@ -101,7 +101,10 @@ theme: butterfly
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: ''
+  type: git
+  # example, https://github.com/hexojs/hexojs.github.io
+  repo: https://github.com/saiuya/saiuya.github.io
+  branch: gh-pages
 
 search:
   path: search.xml
