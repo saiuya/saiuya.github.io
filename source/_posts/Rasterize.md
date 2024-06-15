@@ -2,10 +2,10 @@
 title: Rasterize
 date: 2024-06-14 20:28:28
 categories: 
-- ゼミ
+- siminal
 tags:
 - CG
-- 研究
+- Research
 ---
 
 ## viewport变换:
