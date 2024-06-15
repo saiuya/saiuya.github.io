@@ -2,20 +2,20 @@
 <search>
   <entry>
     <title>Rasterize</title>
-    <url>/post/%E3%82%BC%E3%83%9F/20240614202828.html</url>
+    <url>/post/siminal/20240614202828.html</url>
     <content><![CDATA[<h2 id="viewport变换">viewport变换:</h2>
 投影変更によって、カメラの可視空間から正規化立方体にします。即ち全ての座標はマイナス1からプラス1までに落ちてます。
 - その後Viewport変換により, カメラの可視空間をscreenに描きます. -
 下図に示す:
 <p align="center">
-<img src="/post/%E3%82%BC%E3%83%9F/20240614202828/投影变换.png" style="zoom: 33%;">
+<img src="/post/siminal/20240614202828/投影变换.png" style="zoom: 33%;">
 </p>
 <hr>
 <h2 id="screenと言うのは何か">screenと言うのは何か？</h2>
 <ul>
 <li>screen空間は一連の画素を組み込みしたものです。
 <p align="center">
-<img src="/post/%E3%82%BC%E3%83%9F/20240614202828/屏幕空间.png" style="zoom: 33%;">
+<img src="/post/siminal/20240614202828/屏幕空间.png" style="zoom: 33%;">
 </p></li>
 <li>上図のように,
 pixelは発光する小さな四角形として簡単に定義できます。</li>
@@ -25,7 +25,7 @@ pixelは発光する小さな四角形として簡単に定義できます。</l
 <li>screen空間のサイズは（0、0）から（Width,
 Height）までと定義します。変換行列を次のように構築します:
 <p align="center">
-<img src="/post/%E3%82%BC%E3%83%9F/20240614202828/视口变换矩阵.png" style="zoom: 22%;">
+<img src="/post/siminal/20240614202828/视口变换矩阵.png" style="zoom: 22%;">
 </p></li>
 <li>この変換行列を使用して、(-1,
 1)の3乗に位置を定義した正規空間を(Width,
@@ -37,7 +37,7 @@ Height)のscreenスペースに変換します。</li>
 <li>一般的に、rasterizeとは、screenスペースのobjectを組み込みしたpolygon（通常は三角形）をpixelに変換し、2D画像を描くことを指します。</li>
 <li>下図に示す:
 <p align="center">
-<img src="/post/%E3%82%BC%E3%83%9F/20240614202828/光栅化.png" style="zoom: 22%;">
+<img src="/post/siminal/20240614202828/光栅化.png" style="zoom: 22%;">
 </p></li>
 <li>三角形を選択するのは、以下の特徴があるからです：
 <ul>
@@ -47,7 +47,7 @@ Height)のscreenスペースに変換します。</li>
 </ul></li>
 <li>下図に示す：
 <p align="center">
-<img src="/post/%E3%82%BC%E3%83%9F/20240614202828/三角形.png" style="zoom: 22%;">
+<img src="/post/siminal/20240614202828/三角形.png" style="zoom: 22%;">
 </p></li>
 </ul>
 <hr>
@@ -57,7 +57,7 @@ pixelの中心点と三角形の位置関係を判断する: 外積できます.
 <ul>
 <li>内外画素を判断する:
 <p align="center">
-<img src="/post/%E3%82%BC%E3%83%9F/20240614202828/叉乘.png" style="zoom: 33%;">
+<img src="/post/siminal/20240614202828/叉乘.png" style="zoom: 33%;">
 </p></li>
 <li>上図に示す：
 <ul>
@@ -88,7 +88,7 @@ V0.y) - (P.y - V0.y)\cdot (V1.x - V0.x)\)</span></li>
 box）を使用し、その境界ボックス内の点のみをサンプリングテストすることができます。</li>
 <li>下図に示す：
 <p align="center">
-<img src="/post/%E3%82%BC%E3%83%9F/20240614202828/box.png" style="zoom: 22%;">
+<img src="/post/siminal/20240614202828/box.png" style="zoom: 22%;">
 </p></li>
 </ul>
 <h3 id="颜色插值-通过重心坐标的方式">2. 颜色插值:
@@ -98,7 +98,7 @@ box）を使用し、その境界ボックス内の点のみをサンプリン�
 <li>一応色彩の属性を例に取り、三角形の3つの頂点の色が既知の場合、三角形の内部の任意の点の色をどのように決定しますか？</li>
 <li>まず、三角形の内部の任意の点の重心座標を取得します。下図を参照します。
 <p align="center">
-<img src="/post/%E3%82%BC%E3%83%9F/20240614202828/重心坐标三角形.png" style="zoom: 22%;">
+<img src="/post/siminal/20240614202828/重心坐标三角形.png" style="zoom: 22%;">
 </p></li>
 <li>三角形の面積は、それを構成する2つの辺のvectorの外積の半分に等しいため、
 <span class="math inline">\(\lambda _{abp}\)</span>, <span class="math inline">\(\lambda _{acp}\)</span>, <span class="math inline">\(\lambda _{bcp}\)</span>のように定義したら: <span class="math display">\[
@@ -179,21 +179,21 @@ _{abp}\overrightarrow{OC}}{1}
   \]</span></p></li>
 <li><p>下图に示す:</p>
 <p align="center">
-</p><p><img src="/post/%E3%82%BC%E3%83%9F/20240614202828/颜色插值.png" style="zoom: 33%;"></p>
+</p><p><img src="/post/siminal/20240614202828/颜色插值.png" style="zoom: 33%;"></p>
 <p></p></li>
 </ul>
 ]]></content>
       <categories>
-        <category>ゼミ</category>
+        <category>siminal</category>
       </categories>
       <tags>
         <tag>CG</tag>
-        <tag>研究</tag>
+        <tag>Research</tag>
       </tags>
   </entry>
   <entry>
     <title>入学記事</title>
-    <url>/post/%E7%94%9F%E6%B4%BB/20240415221322.html</url>
+    <url>/post/life/20240415221322.html</url>
     <content><![CDATA[<p>3月31日ギリギリ来到冲绳, 开启冲绳之旅!</p>
 <h2 id="一言">一言：</h2>
 <ul>
@@ -286,11 +286,11 @@ _{abp}\overrightarrow{OC}}{1}
 </ul>
 ]]></content>
       <categories>
-        <category>生活</category>
+        <category>life</category>
       </categories>
       <tags>
-        <tag>大学</tag>
-        <tag>开学季</tag>
+        <tag>University</tag>
+        <tag>Beginning term</tag>
       </tags>
   </entry>
 </search>
