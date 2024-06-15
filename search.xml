@@ -2,7 +2,7 @@
 <search>
   <entry>
     <title>Rasterize</title>
-    <url>/post/uncategorized/20240614202828.html</url>
+    <url>/post/%E3%82%BC%E3%83%9F/20240614202828.html</url>
     <content><![CDATA[<h2 id="viewport变换">viewport变换:</h2>
 投影変更によって、カメラの可視空間から正規化立方体にします。即ち全ての座標はマイナス1からプラス1までに落ちてます。
 - その後Viewport変換により, カメラの可視空間をscreenに描きます. -
@@ -187,6 +187,13 @@ _{abp}\overrightarrow{OC}}{1}
 </p></li>
 </ul>
 ]]></content>
+      <categories>
+        <category>ゼミ</category>
+      </categories>
+      <tags>
+        <tag>CG</tag>
+        <tag>研究</tag>
+      </tags>
   </entry>
   <entry>
     <title>入学記事</title>
