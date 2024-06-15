@@ -8,36 +8,36 @@
 - その後Viewport変換により, カメラの可視空間をscreenに描きます. -
 下図に示す:
 <p align="center">
-<img src="./img/投影变换.png"  style="zoom: 33%;" />
+<img src="/post/%E3%82%BC%E3%83%9F/20240614202828/投影变换.png" style="zoom: 33%;">
 </p>
-<hr />
+<hr>
 <h2 id="screenと言うのは何か">screenと言うのは何か？</h2>
 <ul>
 <li>screen空間は一連の画素を組み込みしたものです。
 <p align="center">
-<img src="./img/屏幕空间.png"  style="zoom: 33%;" />
+<img src="/post/%E3%82%BC%E3%83%9F/20240614202828/屏幕空间.png" style="zoom: 33%;">
 </p></li>
 <li>上図のように,
 pixelは発光する小さな四角形として簡単に定義できます。</li>
 </ul>
-<hr />
+<hr>
 <ul>
 <li>screen空間のサイズは（0、0）から（Width,
 Height）までと定義します。変換行列を次のように構築します:
 <p align="center">
-<img src="./img/视口变换矩阵.png"  style="zoom: 22%;" />
+<img src="/post/%E3%82%BC%E3%83%9F/20240614202828/视口变换矩阵.png" style="zoom: 22%;">
 </p></li>
 <li>この変換行列を使用して、(-1,
 1)の3乗に位置を定義した正規空間を(Width,
 Height)のscreenスペースに変換します。</li>
 </ul>
-<hr />
+<hr>
 <h2 id="rasteriz">Rasteriz:</h2>
 <ul>
 <li>一般的に、rasterizeとは、screenスペースのobjectを組み込みしたpolygon（通常は三角形）をpixelに変換し、2D画像を描くことを指します。</li>
 <li>下図に示す:
 <p align="center">
-<img src="./img/光栅化.png"  style="zoom: 22%;" />
+<img src="/post/%E3%82%BC%E3%83%9F/20240614202828/光栅化.png" style="zoom: 22%;">
 </p></li>
 <li>三角形を選択するのは、以下の特徴があるからです：
 <ul>
@@ -47,17 +47,17 @@ Height)のscreenスペースに変換します。</li>
 </ul></li>
 <li>下図に示す：
 <p align="center">
-<img src="./img/三角形.png"  style="zoom: 22%;" />
+<img src="/post/%E3%82%BC%E3%83%9F/20240614202828/三角形.png" style="zoom: 22%;">
 </p></li>
 </ul>
-<hr />
+<hr>
 <h2 id="rasteriz-method">Rasteriz Method：</h2>
 <h3 id="pixelの中心点と三角形の位置関係を判断する-外積できます.">1.
 pixelの中心点と三角形の位置関係を判断する: 外積できます.</h3>
 <ul>
 <li>内外画素を判断する:
 <p align="center">
-<img src="./img/叉乘.png"  style="zoom: 33%;" />
+<img src="/post/%E3%82%BC%E3%83%9F/20240614202828/叉乘.png" style="zoom: 33%;">
 </p></li>
 <li>上図に示す：
 <ul>
@@ -81,14 +81,14 @@ V0.y) - (P.y - V0.y)\cdot (V1.x - V0.x)\)</span></li>
 </ul></li>
 <li>だったら, 点Pは三角形の中にいます.</li>
 </ul>
-<hr />
+<hr>
 <ul>
 <li>画面の空間には多数のpixelがありますが、1つの図形要素（三角形）が占めるpixel数は少ないため、各三角形ごとに画面のすべてのpixelを判断する必要はありません。</li>
 <li>テストしたい三角形を囲む境界ボックス（bounding
 box）を使用し、その境界ボックス内の点のみをサンプリングテストすることができます。</li>
 <li>下図に示す：
 <p align="center">
-<img src="./img/box.png"  style="zoom: 22%;" />
+<img src="/post/%E3%82%BC%E3%83%9F/20240614202828/box.png" style="zoom: 22%;">
 </p></li>
 </ul>
 <h3 id="颜色插值-通过重心坐标的方式">2. 颜色插值:
@@ -98,13 +98,10 @@ box）を使用し、その境界ボックス内の点のみをサンプリン�
 <li>一応色彩の属性を例に取り、三角形の3つの頂点の色が既知の場合、三角形の内部の任意の点の色をどのように決定しますか？</li>
 <li>まず、三角形の内部の任意の点の重心座標を取得します。下図を参照します。
 <p align="center">
-<img src="./img/重心坐标三角形.png"  style="zoom: 22%;" />
+<img src="/post/%E3%82%BC%E3%83%9F/20240614202828/重心坐标三角形.png" style="zoom: 22%;">
 </p></li>
 <li>三角形の面積は、それを構成する2つの辺のvectorの外積の半分に等しいため、
-<span class="math inline">\(\lambda _{abp}\)</span>, <span
-class="math inline">\(\lambda _{acp}\)</span>, <span
-class="math inline">\(\lambda _{bcp}\)</span>のように定義したら: <span
-class="math display">\[
+<span class="math inline">\(\lambda _{abp}\)</span>, <span class="math inline">\(\lambda _{acp}\)</span>, <span class="math inline">\(\lambda _{bcp}\)</span>のように定義したら: <span class="math display">\[
 \lambda _{abp} = \frac{S\Delta ABP}{S\Delta ABC} =
 \frac{\frac{\overrightarrow{AB}\times
 \overrightarrow{AP}}{2}}{\frac{\overrightarrow{AB}\times
@@ -124,10 +121,9 @@ class="math display">\[
 \overrightarrow{BP}}{\overrightarrow{AB}\times \overrightarrow{AC}}
 \]</span></li>
 </ul>
-<hr />
+<hr>
 <ul>
-<li>線形補間により、点Dの座標を得ることができます: <span
-class="math display">\[
+<li>線形補間により、点Dの座標を得ることができます: <span class="math display">\[
   D=(1 - t)B+tC　（t は0から1の間のパラメータです。）
   \]</span></li>
 <li>既知： <span class="math display">\[
@@ -149,7 +145,7 @@ _{acp}}\overrightarrow{OB} + \frac{\lambda _{abp}}{\lambda _{abp} +
 \lambda _{acp}}\overrightarrow{OC}
   \]</span></li>
 </ul>
-<hr />
+<hr>
 <ul>
 <li><p>而も既知: <span class="math display">\[
   \frac{AP}{PD} = \frac{AP\cdot \frac{h_{1}}{2} + AP\cdot
@@ -183,8 +179,8 @@ _{abp}\overrightarrow{OC}}{1}
   \]</span></p></li>
 <li><p>下图に示す:</p>
 <p align="center">
-<p><img src="./img/颜色插值.png"  style="zoom: 33%;" /></p>
-</p></li>
+</p><p><img src="/post/%E3%82%BC%E3%83%9F/20240614202828/颜色插值.png" style="zoom: 33%;"></p>
+<p></p></li>
 </ul>
 ]]></content>
       <categories>
